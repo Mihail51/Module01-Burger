@@ -414,14 +414,14 @@ header {
 .content {
     color: #FAF9F9;
     flex: 0 0 580px;
-    padding-top: 170px;
+    padding-top: 157px;
     padding-bottom: 170px;
 }
 .content-title {
     font-size: 120px;
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 120px;
+    line-height: 140px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -431,13 +431,15 @@ header {
     font-weight: 700;
     line-height: 38px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 .content-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
     line-height: 1.4;
-    margin-bottom: 42px;
+    margin-bottom: 50px;
+    margin-top: 32px;
+    padding-right: 35px;
 }
 .content-link,
 .promo a {
@@ -445,7 +447,7 @@ header {
     background-color: #FBB731;
     border-radius: 5px;
     text-decoration: none;
-    padding: 20px 45px;
+    padding: 20px 47px;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
@@ -465,7 +467,8 @@ header {
 .main img {
     width: 829px;
     position: absolute;
-    right: -168px;
+    right: -172px;
+    top: -13px;
 }
 .promo {
     padding-top: 186px;
@@ -482,11 +485,11 @@ header {
 }
 .promo-left {
     background-image: url(../images/promo-left.png);
-    padding: 116px 50px;
+    padding: 116px 40px;
 }
 .promo-right {
     background-image: url(../images/promo-right.png);
-    padding: 102px 50px;
+    padding: 102px 40px;
 }
 .sale {
     font-size: 14px;
