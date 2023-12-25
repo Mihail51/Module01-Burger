@@ -396,6 +396,7 @@ header {
     font-size: 20px;
     font-weight: 900;
     color: #FBB731;
+    text-decoration: none;
 }
 .footer-tel-link:hover {
     color: #DEDEDE;
