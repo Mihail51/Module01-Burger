@@ -353,7 +353,7 @@ header {
 .footer-item {
     flex: 0 0 auto;
 }
-.footer-item h2 {
+.footer-title {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
@@ -364,7 +364,7 @@ header {
     padding-left: 0;
     list-style-type: none;
 }
-.footer-list li {
+.footer-item {
     margin-bottom: 9px;
      font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -372,12 +372,12 @@ header {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-list a {
+.footer-link {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
 }
-.footer-list a:hover {
+.footer-link:hover {
     color: #FBB731;
 }
 .footer-item span {
@@ -389,15 +389,15 @@ header {
 .footer-list-tel {
     margin-top: 5px;
 }
-.footer-list-tel li {
+.footer-tel-item {
     margin-bottom: 12px;
 }
-.footer-list-tel a {
+.footer-tel-link {
     font-size: 20px;
     font-weight: 900;
     color: #FBB731;
 }
-.footer-list-tel a:hover {
+.footer-tel-link:hover {
     color: #DEDEDE;
 }
 
