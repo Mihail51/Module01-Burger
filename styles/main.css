@@ -109,7 +109,7 @@ header {
 .bg {
     text-align: center;
     color: #FFF;
-    padding: 142px;
+    padding: 142px 0;
     margin-bottom: 139px;
     background-image: url(../images/bg.jpg);
     background-size: cover;
@@ -366,6 +366,7 @@ header {
 .footer-box {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-logo {
     width: 63px;
@@ -414,6 +415,7 @@ header {
 }
 .footer-list-tel {
     margin-top: 5px;
+    margin-left: 145px;
 }
 .footer-tel-item {
     margin-bottom: 12px;
@@ -602,7 +604,7 @@ header {
         background-size: contain;
     }
     .header-item {
-        flex-basis: 76.5%;
+        flex-basis: 75.5%;
     }
     .header-nav {
         gap: 22px;
@@ -614,9 +616,38 @@ header {
        background-position: -80px center;
         padding: 99px 40px;
     }
+    .menu {
+        margin-top: 60px;
+    }
     .menu-grid:nth-child(2) {
+        width: auto;
        grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
-        margin-bottom: 100px;
+        margin-bottom: 90px;
+    }
+    .menu-other {
+        width: 100%;
+        display: block;
+        overflow-x: hidden;
+    }
+    .menu-other .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 860px;
+        margin-bottom: 0;
+    }
+    .menu-other .menu-grid-cover {
+        height: 320px;
+    }
+    .menu-other .menu-grid-cover img {
+        height: 320px;
+        top: 50%;
+        object-fit: contain;
+    }
+    .footer {
+        padding-top: 62px;
+    }
+    .footer-list-tel {
+        margin-top: -13px;
+        margin-left: 141px;
     }
 }
