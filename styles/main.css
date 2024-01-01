@@ -157,7 +157,7 @@ header {
     margin-bottom: 19px;
 }
 .description {
-    width: 320px;
+    max-width: 320px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -201,7 +201,7 @@ header {
     line-height: 18px;
 }
 .banner-text {
-    width: 325px;
+    max-width: 325px;
     margin-top: 7px;
     margin-left: 1px;
     font-family: 'Open Sans', sans-serif;
@@ -590,10 +590,64 @@ header {
     margin-top: 0;
 }
 
+/* Mogal  */
+
+.burger {
+    width: 34px;
+    height: 22px;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.modal {
+    max-width: 500px;
+    background-color: #FFF8DC;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    right: 0;
+    left: 0;
+    margin: 20px auto 0;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.modal .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+}
+.burger-close {
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
 /* Responsive  */
 
 @media (min-width: 1001px) {
     .footer-list + .footer-list-tel {
+        display: none;
+    }
+}
+@media (min-width: 766px) {
+    .header-burger {
         display: none;
     }
 }
@@ -649,3 +703,42 @@ header {
         display: none;
     }
 }
+@media (max-width: 765px) {
+    nav {
+        display: none;
+    }
+    .header {
+        gap: 21px;
+    }
+}
+@media (max-width: 567px) {
+    .title {
+        font-size: 38px;
+    }
+    .breadcrambs a {
+        font-size: 14px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .bg {
+        padding: 55px 0;
+    }
+    .banner-box {
+        background-position: 17% center;
+        padding: 35px 24px 54px;
+    }
+}
+@media (max-width: 360px) {
+    .header-logo {
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+    }
+} 
+@media (max-width: 320px) {
+    .banner-box {
+        background-position: 25% center;
+        padding: 35px 30px 54px;
+    }
+}  
