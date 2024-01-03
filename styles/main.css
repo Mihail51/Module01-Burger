@@ -268,7 +268,9 @@ header {
     font-size: 15px;
     font-weight: 400;
     color: #443737;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background-image: url(../images/arrow.svg);
     background-repeat: no-repeat;
     background-size: 12.788px 7.749px;
@@ -300,7 +302,8 @@ header {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .menu-grid-title {
     font-size: 30px;
