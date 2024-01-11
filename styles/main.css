@@ -682,7 +682,8 @@ header {
     }
     .menu-other {
         overflow: hidden;
-        height: 558px;
+        height: 568px;
+        margin-bottom: 62px;
     }
     .menu-other .menu-grid {
         display: flex;
