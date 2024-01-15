@@ -245,6 +245,9 @@ header {
     margin-bottom: 72px;
     padding-top: 20px;
 }
+.menu-other {
+    margin-top: 65px;
+}
 .menu-header {
     display: flex;
     justify-content: space-between;
