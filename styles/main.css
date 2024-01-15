@@ -283,7 +283,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 20px;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
 }
 .menu-grid-item {
     text-align: center;
