@@ -707,29 +707,44 @@ header {
         display: none;
     }
 }
-@media (max-width: 765px) {
+@media (max-width: 768px) {
     .container {
         padding-right: calc((100vw - 320px)/(765 - 320)*(15 - 12) + 12px);
         padding-left: calc((100vw - 320px)/(765 - 320)*(15 - 12) + 12px);
     }
+    .bg {
+        padding-left: 12px;
+    }
+    .menu-burger {
+        margin-top: 67px;
+    }
+    .menu-header {
+        padding-bottom: 35px;
+    }
+    .menu-other {
+        height: 560px;   
+        margin-top: 0;
+    }  /*
     .menu-other .container {
         padding-right: 0;
-    }  
+    } */ 
     nav {
         display: none;
     }
     .header {
         gap: 21px;
+        padding-bottom: 31px;
     }  
     .menu-grid {
-      /*  gap: calc((100vw - 320px)/(765 - 320)*(50 - 34) + 34px) calc((100vw - 320px)/(765 - 320)*(15 - 12) + 12px);  */
+        gap: calc((100vw - 320px)/(765 - 320)*(50 - 12) + 12px) calc((100vw - 320px)/(768 - 320)*(12 - 8) + 8px);  
         display: flex;
-        gap: 12px;
+    /*    gap: 48px 12px;  */
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 71px;
     }
     .menu-grid-item {
-        flex: 0 0 47.3%;
+        flex: 0 0 48.5%;
     }
     .menu-grid-cover {
         height: 56.2vw;
@@ -739,21 +754,35 @@ header {
         height: 56.2vw;
       /*  height: calc((100vw - 320px)/(765 - 320)*(430 - 180) + 180px); */ 
     }
-    .menu-grid-btn {
-        width: 100%;
-    }
     .menu-other .menu-grid {
     justify-content: start;
     flex-wrap: nowrap;
-    gap: 6px;
+    gap: 12px;
     }
     .menu-other .menu-grid-item {
-        flex: 0 0 43.75vw;
+        flex: 0 0 36vw;
     }
     .menu-other .menu-grid-cover, .menu-other .menu-grid-cover img {
-        height: 56.2vw;
+        height: 42vw;
     }
-    .footer-box {
+    .footer {
+        margin-top: 127px;
+        padding-top: 65px;
+    }
+    .footer-item {
+        margin-bottom: 11px;
+    }
+    .footer-item:nth-child(2) {
+        margin-right: 20px;
+    }  
+    .footer-title {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .footer-tel-link {
+        font-family: 'Nunito Sans', sans-serif;
+    }  
+      
+ /*   .footer-box {
         justify-content: start;
         flex-wrap: wrap;
         gap: 50px;
@@ -770,7 +799,43 @@ header {
     }  
     .footer-item:nth-child(3) {
         order: 3;
+    }  */
+}  /*
+@media (max-width: 700px) {
+    .menu-other {
+        height: 635px;
+    }
+}  */
+@media (max-width: 665px) {
+    .menu-other {
+        height: 520px;
+    }
+      .footer-box {
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+        order: 1;
+    }
+    .footer-item:nth-child(2) {
+        order: 2;
     }  
+    .footer-item:nth-child(3) {
+        order: 3;
+    } 
+}
+@media (max-width: 600px) {
+    .menu-other {
+        height: 500px;
+    }
+    .menu-grid-title {
+        font-size: 28px;
+    }
 }
 @media (max-width: 567px) {
     .header {
@@ -801,13 +866,16 @@ header {
         background-position: 17% center;
         padding: 35px 24px 54px;
     }
+    .banner-text {
+        max-width: 240px;
+    }
     .menu {
         margin-top: 30px;
         margin-bottom: 50px;
         padding-top: 20px;
     }
     .menu-other {
-        height: calc((100vw - 320px)/(567 - 320)*(580 - 385) + 385px);
+        height: calc((100vw - 320px)/(567 - 320)*(470 - 385) + 350px);
         margin-top: -70px;
         margin-bottom: -117px;
     }  
@@ -873,5 +941,41 @@ header {
     .banner-box {
         background-position: 21% -14px;
         padding: 35px 30px 45px 18px;
+    }
+     .menu-header {
+        padding-bottom: 34px;
+    }
+    .menu-grid {
+        margin-bottom: 105px;
+    }
+    .menu-other {
+        margin-bottom: -70px;
+    }
+    .menu-other .menu-grid {
+        gap: 6px;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 44vw;
+    }
+    .menu-other .menu-grid-cover, .menu-other .menu-grid-cover img {
+        height: 56vw;
+    }
+    .menu-grid-price {
+        margin-bottom: 7px;
+    }
+    .menu-grid-btn {
+        width: 90%;
+    }
+    .menu-grid-btn {
+        gap: 2px;
+    }
+    .footer-list {
+        margin-bottom: 18px;
+    }
+     .footer-title {
+        font-size: 18px;
+    }
+    .footer-item:nth-child(2) {
+        margin-bottom: 2px;
     }
 }  
