@@ -597,7 +597,9 @@ header {
 }
 
 /* Mogal  */
-
+.header-burger {
+    display: none;
+}
 .burger {
     width: 34px;
     height: 22px;
@@ -651,12 +653,12 @@ header {
     .footer-list + .footer-list-tel {
         display: none;
     }
-}
-@media (min-width: 766px) {
+}  /*
+@media (min-width: 770px) {
     .header-burger {
         display: none;
     }
-}
+}   */
 @media (max-width: 1000px) {
     .container {
         max-width: 738px;
@@ -737,6 +739,9 @@ header {
     .header {
         gap: 21px;
         padding-bottom: 31px;
+    }
+    .header-burger {
+        display: flex;
     }  
     .menu-grid {
         gap: calc((100vw - 320px)/(765 - 320)*(50 - 12) + 12px) calc((100vw - 320px)/(768 - 320)*(12 - 8) + 8px);  
